@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <!--
+    LinearLayout を使うと、ボタンやテキストなどを簡単に横一列・縦一列に並べることができます。
+    -->
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Score : 300"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"/>
+    <!--
+    android:id="@+id/scoreLabel"
+        id
+            TextView に id（名前）をつけています。
+            ゲームのスコアはプレイ中に変化するので、MainActivity.java から更新できるようにする必要があります。id を付けることで MainActivity.java からこの TextView を呼び出せるようになります。
+            このあと TextView 以外の要素にも id をつけていきますが「一つのアクティビティ内で同じ id 名を使うことはできない」ことだけ注意です。
+
+    android:gravity="center_vertical"
+        gravity
+            文字が上下中央になるようにします。
+    -->
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/startLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="タップしてスタート"
+            android:textSize="20sp" />
+
+        <!--
+            android:src="@drawable/box"
+                先ほど画像を drawable フォルダに置きましたが、その画像を表示するためのコードです。
+                @drawable/ファイル名と書きます。
+            -->
+
+        <ImageView
+            android:id="@+id/run_man"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/run_man" />
+
+        <ImageView
+            android:id="@+id/green_enemy"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/green_enemy" />
+
+        <ImageView
+            android:id="@+id/pink"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/pink" />
+
+        <!--/////////////////////////////////////////////////////////////////////////////////////-->
+        <ImageView
+            android:id="@+id/point1_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point2_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point3_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point4_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point5_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point6_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point7_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point8_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point9_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point10_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point11_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point12_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point13_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point14_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point15_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point16_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point17_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point18_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point19_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point20_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point21_RunMan"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+        <!--/////////////////////////////////////////////////////////////////////////////////////-->
+
+        <!--/////////////////////////////////////////////////////////////////////////////////////-->
+        <ImageView
+            android:id="@+id/point1_GreenEnemy"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point2_GreenEnemy"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point3_GreenEnemy"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point4_GreenEnemy"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point5_GreenEnemy"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point6_GreenEnemy"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point7_GreenEnemy"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point8_GreenEnemy"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point9_GreenEnemy"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point10_GreenEnemy"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point11_GreenEnemy"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point12_GreenEnemy"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/point13_GreenEnemy"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:src="@drawable/point" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background=
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/stage1" />”@drawable/Stage1"
+        app:srcCompat="@drawable/Stage1" />
+        <!--/////////////////////////////////////////////////////////////////////////////////////-->
+
+
+    </FrameLayout>
+
+    <!--
+    FrameLayout
+        FrameLayout（フレームレイアウト）を使うと、要素を重ねることができます。
+        このゲームでは、青い箱がボールと重なるとポイントゲット、黒のトゲトゲと重なるとゲームオーバーとなるので、要素を重ねることができる FrameLayout を使います。
+    -->
+
+</LinearLayout>
