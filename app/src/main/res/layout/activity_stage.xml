@@ -6,14 +6,14 @@
     android:background="#afc"
     android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="match_parent"
-            android:layout_height="105dp"
-            app:srcCompat="@drawable/stage1" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="105dp"
-        app:srcCompat="@drawable/stage2" />
+        android:layout_height="wrap_content"
+        android:text="stage1"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stage2"/>
