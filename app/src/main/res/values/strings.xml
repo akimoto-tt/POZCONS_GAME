@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">POZCONS_GAME</string>
+    <string name="button"></string>
+    <string name="button2"></string>
 </resources>
